@@ -60,7 +60,7 @@ public class Studenttest {
         list.add(f);
         for(int i=0;i<list.size();i++)
         {
-             System.out.println(list.get(i));
+            Logger.log(list.get(i));
         } 
         Comparator<Student> compareBygpa = new Comparator<Student>()
         {
