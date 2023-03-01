@@ -4,7 +4,7 @@ import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 public class Studenttest {
-    public static void main(String args[])
+    public static void main(String[] args)
     {   
     	
     	PrintStream print = new PrintStream(new FileOutputStream(FileDescriptor.out));
@@ -19,11 +19,11 @@ public class Studenttest {
         for(int i=0;i<5;i++)
         {
         	
-        	String Name;
+        	String name;
         	int age;
         	double gpa;
         	print.println("Enter the Name Age and CGPA of the Student:");
-        	Name = s.nextLine();
+        	name = s.nextLine();
         	do
         	{    
         		try
@@ -50,7 +50,7 @@ public class Studenttest {
         			print.println("Enter Gpa correctly:");
         		}
         	}while(true);
-        	list.get(i).setValue(Name, age, gpa);
+        	list.get(i).setValue(name, age, gpa);
         }
         for(int i=0;i<list.size();i++)
         {
